@@ -1,0 +1,16 @@
+// import normalize from node_module only for compilation in main.css
+@import "../../../node_modules/normalize.css/normalize";
+
+// scss -> abstracts_folder
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// scss -> base_folder
+
+body {
+  background: green;
+}
+// scss -> components_folder
+
+
+// scss -> layout_folder

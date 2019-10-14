@@ -1,0 +1,19 @@
+{
+  "name": "mk_foinni_layout",
+  "version": "1.0.0",
+  "description": "homework_14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Kopeikin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize.css": "^8.0.1"
+  }
+}
