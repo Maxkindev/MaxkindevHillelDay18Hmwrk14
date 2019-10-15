@@ -45,7 +45,6 @@ function cleanDist() {
 }
 
 // ====================
-// cb - callback function
 function localServer(cb) {
   browserSync.init({
     server: {
@@ -64,12 +63,10 @@ function watch() {
 }
 
 // ==============================
-// gulp's commands for single use.
-// exports.style = style;
+exports.style = style;
 // exports.cleanDist = cleanDist;
  
 // ==========
-// If ready to -> build <- project's final files for customer
 exports.build = gulp.series(
   cleanDist, 
   buildHtml, 
@@ -79,9 +76,6 @@ exports.build = gulp.series(
 );
 
 // ====================
-// ==== Explanation for my future kids and grandkids ====
-// exports.default is GULP's DEFAULT METHOD.
-// Type-> gulp <- in terminal to run this default method.
 exports.default = gulp.parallel(
   localServer, 
   watch
