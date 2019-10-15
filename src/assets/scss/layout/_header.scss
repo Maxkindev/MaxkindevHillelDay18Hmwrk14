@@ -1,0 +1,130 @@
+// HEADER
+$height-header: 803px;
+$height-header-wrapper: 119px;
+
+.header {
+  // ==============================
+  &-content-container {
+    position: relative;
+    width: 1600px;
+    height: $height-header;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/bg_header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: $zx;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  // ==============================
+  &-wrapper {
+    display: flex;
+    height: $height-header-wrapper;
+    align-items: center;
+    position: relative;
+    z-index: $zx * 2;
+    width: $centering-container;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__logo {
+      padding-left: 30px;
+
+      &-part:first-child {
+        @include font-roboto(40px, $fw-r, 40px);
+        letter-spacing: -2px;
+        color: $clr-text-light;
+      }
+    
+      &-part:last-child {
+        @include font-pacifico(40px, $fw-r, 40px);
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: $clr-text-accent;
+      }
+    }
+
+    &__nav {
+      margin-left: auto;
+    }
+
+    &-menu {
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none;
+
+      &__item {
+        margin-right: 50px;
+      }
+
+      &__item:last-child {
+        margin-right: 100px;
+      }
+
+      &__link {
+        display: block;
+        border-bottom: 1px solid transparent;
+        @include font-roboto(14px, $fw-l, 36px);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $clr-text-light;
+
+        &:hover {
+          border-bottom: 1px solid $clr-text-accent;
+          color: $clr-text-accent;
+        }
+
+        &--active {
+          border-bottom: 1px solid $clr-text-accent;
+          color: $clr-text-accent;
+        }
+      }
+    }
+  }
+
+  // ==============================
+  &-slider {
+    display: flex;
+    position: relative;
+    z-index: 20;
+    height: ($height-header - $height-header-wrapper - 1px);
+    border-top: 1px solid $clr-slider-border;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $clr-text-light;
+
+    &__text:first-child {
+      margin-top: 0;
+      margin-bottom: 32px;
+      @include font-exo(48px, $fw-r, 50px);
+      text-transform: capitalize;
+    }
+
+    &__text:last-child {
+      max-width: 913px;
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(18px, $fw-l, 36px);
+      text-align: center;
+    }
+
+    &__span {
+      font-weight: $fw-blk;
+      text-transform: uppercase;
+      color: $clr-text-accent;
+    }
+  }
+}

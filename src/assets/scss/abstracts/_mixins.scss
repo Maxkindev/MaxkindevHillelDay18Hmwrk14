@@ -1,17 +1,32 @@
-// FONT
-@mixin font-roboto {
+// ==============================
+// MIXINS FOR ALL LAYOUT
+// ==============================
+
+// FONTS
+@mixin font-roboto($fs, $fw, $lh) {
   font-family: 'Roboto', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }
 
-@mixin font-roboto-slab {
+@mixin font-roboto-slab($fs, $fw, $lh) {
   font-family: 'Roboto Slab', serif;
-
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }
 
-@mixin font-pacifico {
+@mixin font-pacifico($fs, $fw, $lh) {
   font-family: 'Pacifico', cursive;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }
 
-@mixin font-exo {
+@mixin font-exo($fs, $fw, $lh) {
   font-family: 'Exo', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
 }

@@ -7,10 +7,8 @@
 
 // scss -> base_folder
 
-body {
-  background: green;
-}
 // scss -> components_folder
 
 
 // scss -> layout_folder
+@import "./layout/header"
