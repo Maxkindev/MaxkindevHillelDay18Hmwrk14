@@ -4,13 +4,13 @@ $height-header-wrapper: 119px;
 
 .header {
   // ==============================
-  &-content-container {
+  &__content-container {
     position: relative;
-    width: 1600px;
+    width: $section-content-container;
     height: $height-header;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../images/bg_header.png");
+    background-image: url('../images/bg_header.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -33,7 +33,7 @@ $height-header-wrapper: 119px;
     align-items: center;
     position: relative;
     z-index: $zx * 2;
-    width: $centering-container;
+    width: $inner-centering-wrapper;
     margin-left: auto;
     margin-right: auto;
 
@@ -106,25 +106,25 @@ $height-header-wrapper: 119px;
     align-items: center;
     color: $clr-text-light;
 
-    &__text:first-child {
+    &__title {
       margin-top: 0;
       margin-bottom: 32px;
       @include font-exo(48px, $fw-r, 50px);
       text-transform: capitalize;
     }
 
-    &__text:last-child {
+    &__span {
+      font-weight: $fw-blk;
+      text-transform: uppercase;
+      color: $clr-text-accent;
+    }
+
+    &__text {
       max-width: 913px;
       margin-top: 0;
       margin-bottom: 0;
       @include font-roboto(18px, $fw-l, 36px);
       text-align: center;
-    }
-
-    &__span {
-      font-weight: $fw-blk;
-      text-transform: uppercase;
-      color: $clr-text-accent;
     }
   }
 }

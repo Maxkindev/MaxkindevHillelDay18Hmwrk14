@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-.header-content-container {
+.header__content-container {
   position: relative;
   width: 1600px;
   height: 803px;
@@ -348,7 +348,7 @@ template {
   background-size: cover;
 }
 
-.header-content-container::before {
+.header__content-container::before {
   content: '';
   position: absolute;
   z-index: 10;
@@ -447,7 +447,7 @@ template {
   color: #fffcf4;
 }
 
-.header-slider__text:first-child {
+.header-slider__title {
   margin-top: 0;
   margin-bottom: 32px;
   font-family: 'Exo', sans-serif;
@@ -457,7 +457,13 @@ template {
   text-transform: capitalize;
 }
 
-.header-slider__text:last-child {
+.header-slider__span {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1DDE85;
+}
+
+.header-slider__text {
   max-width: 913px;
   margin-top: 0;
   margin-bottom: 0;
@@ -466,10 +472,4 @@ template {
   font-weight: 300;
   line-height: 36px;
   text-align: center;
-}
-
-.header-slider__span {
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #1DDE85;
 }
