@@ -28,17 +28,19 @@ $height-header-wrapper: 119px;
 
   // ==============================
   &-wrapper {
+    box-sizing: border-box;
     display: flex;
-    height: $height-header-wrapper;
-    align-items: center;
     position: relative;
     z-index: $zx * 2;
+    height: $height-header-wrapper;
     width: $inner-centering-wrapper;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
 
     &__logo {
-      padding-left: 30px;
 
       &-part:first-child {
         @include font-roboto(40px, $fw-r, 40px);
@@ -109,6 +111,8 @@ $height-header-wrapper: 119px;
     &__title {
       margin-top: 0;
       margin-bottom: 32px;
+      padding-left: 15px;
+      padding-right: 15px;
       @include font-exo(48px, $fw-r, 50px);
       text-transform: capitalize;
     }
@@ -123,6 +127,8 @@ $height-header-wrapper: 119px;
       max-width: 913px;
       margin-top: 0;
       margin-bottom: 0;
+      padding-left: 15px;
+      padding-right: 15px;
       @include font-roboto(18px, $fw-l, 36px);
       text-align: center;
     }
