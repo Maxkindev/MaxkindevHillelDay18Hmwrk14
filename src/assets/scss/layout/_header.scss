@@ -68,11 +68,11 @@ $height-header-wrapper: 119px;
       list-style: none;
 
       &__item {
-        margin-right: 50px;
+        margin-right: 45px;
       }
 
       &__item:last-child {
-        margin-right: 100px;
+        margin-right: 90px;
       }
 
       &__link {
@@ -124,7 +124,6 @@ $height-header-wrapper: 119px;
     }
 
     &__text {
-      max-width: 913px;
       margin-top: 0;
       margin-bottom: 0;
       padding-left: 15px;

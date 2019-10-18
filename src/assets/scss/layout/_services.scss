@@ -1,1 +1,98 @@
 // SECTION SERVICES
+.services {
+  position: relative;
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    width: $section-content-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 15px 20px;
+    background-color: $clr-text-light;
+  }
+
+  // ==============================
+  &-wrapper {
+    box-sizing: border-box;
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(30px, $fw-m, 36px);
+      text-transform: capitalize;
+      color: $clr-text-main;
+    }
+
+    &__span {
+      text-transform: uppercase;
+      color: $clr-text-accent;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 55px 0 80px;
+      @include font-roboto(18px, $fw-t, 30px);
+      color: $clr-text-secondary;
+    }
+  }
+
+  // ==============================
+  &-instances-holder {
+    display: flex;
+    max-width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+
+  // ==========
+  &-instance {
+    box-sizing: border-box;
+    max-width: 360px;
+    margin-bottom: 45px;
+    padding: 35px 15px 27px;
+    border: 1px solid $clr-border-secondary;
+    text-align: center;
+    cursor: pointer;
+    color: $clr-text-main;
+
+    &__headline {
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include font-roboto(24px, $fw-m, 45px);
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(14px, $fw-t, 30px);
+      color: $clr-text-secondary;
+    }
+
+    &:hover {
+      border: 1px solid $clr-border-accent;
+    }
+
+    &:hover &__svg-path {
+      fill: $clr-text-accent;
+    }
+
+    &:hover &__headline {
+      color: $clr-text-accent;
+    }
+
+    &:hover &__text {
+      color: $clr-text-main;
+    }
+  }
+
+  &-instance:not(:nth-child(3n)) {
+    margin-right: 45px;
+  }
+}
