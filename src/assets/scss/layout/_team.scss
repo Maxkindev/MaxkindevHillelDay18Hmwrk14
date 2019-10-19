@@ -1,0 +1,137 @@
+// SECTION TEAM
+.team {
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    width: $section-content-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 55px 15px 20px;
+    background-color: $clr-text-light;
+    text-align: center;
+  }
+
+  // ==============================
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    @include font-roboto(30px, $fw-m, 36px);
+    text-transform: capitalize;
+    color: $clr-text-main;
+  }
+
+  // ==============================
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // ====================
+  &-member {
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px 0;
+
+    &__image {
+      display: block;
+    }
+
+    &__img-overlay {
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      padding: 10px 0;
+      background-color: rgba(69, 69, 70, 0.9);
+    }
+
+    &__img-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(18px, $fw-r, 25px);
+      color: $clr-text-light;
+    }
+
+    &__img-text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(14px, $fw-t, 20px);
+      color: $clr-text-light;
+    }
+
+    // ====================
+    &-overlay {
+      box-sizing: border-box;
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(29, 222, 133, 0.9);
+      visibility: hidden;
+
+      &__headline {
+        margin-top: 0;
+        margin-bottom: 0;
+        @include font-roboto(18px, $fw-r, 27px);
+        color: $clr-text-light;
+      }
+  
+      &__description {
+        margin-top: 0;
+        margin-bottom: 0px;
+        @include font-roboto(14px, $fw-t, 21px);
+        color: $clr-text-light;
+      }
+
+      &__contacts {
+        box-sizing: border-box;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 42px;
+        padding: 9px 0;
+        border-top: 1px solid $clr-text-light;
+        border-bottom: 1px solid $clr-text-light;
+        justify-content: center;
+      }
+
+      &__link {
+        display: block;
+        text-decoration: none;
+
+        &:not(:nth-child(3n)) {
+          margin-right: 20px;
+        }
+
+        &-logo {
+          display: block;
+        }
+      }
+    }
+
+    // ====================
+    &:hover &__img-overlay {
+      display: none;
+    }
+
+    &:hover &-overlay {
+      visibility: visible;
+    }
+
+    &:not(:nth-child(4n)) {
+      margin-right: 31px;
+    }
+  }
+}
