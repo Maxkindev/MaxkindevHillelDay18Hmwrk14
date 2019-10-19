@@ -4,7 +4,7 @@
   // ==============================
   &__content-container {
     box-sizing: border-box;
-    width: $section-content-container;
+    max-width: $section-content-container;
     margin-left: auto;
     margin-right: auto;
     padding: 120px 15px 20px;
@@ -44,7 +44,7 @@
   // ==============================
   &-instances-holder {
     display: flex;
-    max-width: $inner-centering-wrapper;
+    width: $inner-centering-wrapper;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;

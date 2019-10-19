@@ -1,0 +1,116 @@
+// SECTION PRICES
+.prices {
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    max-width: $section-content-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 15px 20px;
+    background-color: $clr-section-bg-light;
+    text-align: center;
+  }
+
+  // ==============================
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    @include font-roboto(30px, $fw-m, 36px);
+    text-transform: capitalize;
+    color: $clr-text-main;
+  }
+
+  // ==============================
+  &-wrapper {
+    display: flex;
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+
+  // ===============
+  &-plan {
+    flex: 0 1 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__headline {
+      margin-top: 0;
+      margin-bottom: 25px;
+      @include font-roboto(14px, $fw-t, 36px);
+      color: $clr-text-secondary;
+    }
+  }
+
+  // ===============
+  &-card {
+    border: 1px solid transparent;
+
+    &__cost-title {
+      box-sizing: border-box;
+      margin-top: 0;
+      margin-bottom: 25px;
+      padding: 20px 0 15px;
+      border: 1px solid $clr-border-secondary;
+      @include font-roboto-slab(30px, $fw-r, 36px);
+      color: $clr-text-main;
+
+      .prefix {
+        @include font-roboto-slab(24px, $fw-r, 36px);
+        vertical-align: super;
+      }
+
+      .postfix {
+        @include font-roboto-slab(16px, $fw-t, 36px);
+      }
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include font-roboto(14px, $fw-t, 36px);
+      color: $clr-text-secondary;
+    }
+
+    // ==============================
+    .button-link {
+      display: block;
+      box-sizing: border-box;
+      @include button-size(100px, 40px);
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+      @include font-roboto(14px, $fw-t, 36px);
+      border-color: $clr-border-main;
+      text-transform: capitalize;
+      color: $clr-text-main;
+    }
+  }
+
+  // .prices-plan--active
+  // .prices-plan:hover
+  &-plan {
+
+    &--active &__headline,
+    &:hover &__headline {
+      color: $clr-text-accent;
+    }
+  }
+
+  &-plan--active &-card,
+  &-plan:hover &-card {
+    border: 1px solid $clr-border-accent;
+
+    &__cost-title,
+    .button-link {
+      border-color: $clr-border-accent;
+      background-color: $clr-bg-accent;
+      color: $clr-text-light;
+    }
+  }
+}

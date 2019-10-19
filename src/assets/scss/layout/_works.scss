@@ -4,7 +4,7 @@
   // ==============================
   &__content-container {
     box-sizing: border-box;
-    width: $section-content-container;
+    max-width: $section-content-container;
     margin-left: auto;
     margin-right: auto;
     padding: 90px 15px 20px;
@@ -91,6 +91,7 @@
     margin-right: auto;
     padding: 7px 0;
     @include font-roboto(18px, $fw-t, 36px);
+    text-transform: capitalize;
     background-color: $clr-bg-button;
     color: $clr-text-light;
   }

@@ -6,7 +6,7 @@ $height-header-wrapper: 119px;
   // ==============================
   &__content-container {
     position: relative;
-    width: $section-content-container;
+    max-width: $section-content-container;
     height: $height-header;
     margin-left: auto;
     margin-right: auto;

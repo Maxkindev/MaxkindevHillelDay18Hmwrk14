@@ -4,7 +4,7 @@
   // ==============================
   &__content-container {
     box-sizing: border-box;
-    width: $section-content-container;
+    max-width: $section-content-container;
     margin-left: auto;
     margin-right: auto;
     padding: 55px 15px 20px;
