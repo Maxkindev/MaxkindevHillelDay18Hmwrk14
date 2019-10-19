@@ -1,0 +1,18 @@
+//  standart button
+.button {
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+  color: #000000;
+}
+
+// link as a button
+.button-link {
+  border: 1px solid transparent;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}

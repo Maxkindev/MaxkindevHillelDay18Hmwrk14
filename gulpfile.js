@@ -10,7 +10,7 @@ function style() {
   return gulp.src('./src/assets/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(sourcemaps.write('.', {addComment: false}))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./src/assets/css'))
     .pipe(browserSync.stream());
 }

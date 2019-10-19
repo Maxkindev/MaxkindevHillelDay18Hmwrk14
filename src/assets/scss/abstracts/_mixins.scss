@@ -3,6 +3,7 @@
 // ==============================
 
 // FONTS
+// ==============================
 @mixin font-roboto($fs, $fw, $lh) {
   font-family: 'Roboto', sans-serif;
   font-size: $fs;
@@ -29,4 +30,11 @@
   font-size: $fs;
   font-weight: $fw;
   line-height: $lh;
+}
+
+// BUTTONS
+// ==============================
+@mixin button-size($w, $h) {
+  width: $w;
+  height: $h;
 }

@@ -1,0 +1,97 @@
+// SECTION WORKS
+.works {
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    width: $section-content-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 90px 15px 20px;
+    background-color: $clr-section-bg-light;
+    text-align: center;
+  }
+
+  // ==============================
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    @include font-roboto(30px, $fw-m, 36px);
+    text-transform: capitalize;
+    color: $clr-text-main;
+  }
+
+  // ==============================
+  &-wrapper {
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // ==========
+  &-nav {
+    margin-bottom: 45px;
+
+    &-menu {
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+      justify-content: center;
+      list-style: none;
+
+      &__item {
+        margin-right: 45px;
+      }
+
+      &__item:last-child {
+        margin-right: 0;
+      }
+
+      &__link {
+        display: block;
+        border-bottom: 1px solid transparent;
+        @include font-roboto(18px, $fw-l, 36px);
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $clr-text-main;
+
+        &--active,
+        &:hover {
+          border-bottom: 1px solid $clr-border-accent;
+          color: $clr-text-accent;
+        }
+      }
+    }
+  }
+
+  // ==============================
+  &-instances {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-card {
+      margin-bottom: 45px;
+
+      &__link,
+      &__img {
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // ==============================
+  .button-link {
+    display: block;
+    box-sizing: border-box;
+    @include button-size(195px, 50px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 0;
+    @include font-roboto(18px, $fw-t, 36px);
+    background-color: $clr-bg-button;
+    color: $clr-text-light;
+  }
+}

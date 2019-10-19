@@ -83,13 +83,9 @@ $height-header-wrapper: 119px;
         text-decoration: none;
         color: $clr-text-light;
 
+        &--active,
         &:hover {
-          border-bottom: 1px solid $clr-text-accent;
-          color: $clr-text-accent;
-        }
-
-        &--active {
-          border-bottom: 1px solid $clr-text-accent;
+          border-bottom: 1px solid $clr-border-accent;
           color: $clr-text-accent;
         }
       }
