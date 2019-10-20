@@ -7,7 +7,7 @@
     max-width: $section-content-container;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 15px 20px;
+    padding: 100px 15px 120px;
     background-color: $clr-section-bg-light;
     text-align: center;
   }
@@ -85,6 +85,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 25px;
+      padding: 2px 0;
       @include font-roboto(14px, $fw-t, 36px);
       border-color: $clr-border-main;
       text-transform: capitalize;

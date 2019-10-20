@@ -1,0 +1,115 @@
+// SECTION PRICES
+.contacts {
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: $section-content-container;
+    // height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 15px;
+    text-align: center;
+    background-image: url('../images/bg_contacts.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: $zx;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  // ==============================
+  &__title {
+    position: relative;
+    z-index: $zx * 2;
+    margin-top: 0;
+    margin-bottom: 20px;
+    @include font-roboto(30px, $fw-m, 36px);
+    text-transform: uppercase;
+    color: $clr-text-light;
+  }
+
+  // ==============================
+  &-wrapper {
+    position: relative;
+    z-index: $zx * 10;
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // ===============
+  &-form {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    &__input-holder {
+      width: 440px;
+    }
+
+    &__input,
+    &__textarea {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 7px 20px;
+      border: 1px solid $clr-input-border;
+      background-color: transparent;
+      @include font-roboto(14px, $fw-t, 36px);
+      font-style: italic;
+      color: $clr-text-light;
+
+      &::placeholder {
+        @include font-roboto(14px, $fw-t, 36px);
+        font-style: italic;
+        color: $clr-text-light;
+      }
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+
+    // ===============
+    &__textarea-holder {
+      margin-bottom: 30px;
+    }
+
+    &__textarea {
+      height: 215px;
+      resize: none;
+    }
+
+    // ==============================
+    .button {
+      display: block;
+      box-sizing: border-box;
+      @include button-size(195px, 50px);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 7px 0;
+      @include font-roboto(18px, $fw-t, 36px);
+      text-transform: capitalize;
+      background-color: $clr-bg-button;
+      color: $clr-text-light;
+    }
+  }
+}
