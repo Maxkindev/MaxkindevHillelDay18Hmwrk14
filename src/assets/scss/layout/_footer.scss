@@ -1,0 +1,150 @@
+// FOOTER
+.footer {
+
+  // ==============================
+  &__content-container {
+    box-sizing: border-box;
+    max-width: $section-content-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 15px 0;
+    background-color: $clr-bg-footer-main;
+    color: #fff;
+  }
+
+  // ==============================
+  &-wrapper {
+    display: flex;
+    width: $inner-centering-wrapper;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    align-items: flex-start;
+
+    &-col {
+      @include font-roboto(14px, $fw-l, 30px);
+      color: $clr-text-secondary;
+
+      &:nth-child(1){
+        width: 310px;
+        margin-right: 165px;
+      }
+
+      &:nth-child(2){
+        width: 180px;
+        margin-right: 160px;
+      }
+
+      &:nth-child(3){
+        width: 250px;
+      }
+
+      &__headline {
+        margin-top: 0;
+        margin-bottom: 15px;
+        @include font-roboto(18px, $fw-r, 36px);
+        text-transform: capitalize;
+        color: $clr-text-light;
+      }
+
+      &__text {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      // ==============================
+      &__section,
+      &__socials {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      &__section-box:last-child {
+        margin-left: auto;
+      }
+
+      &__section-link,
+      &__socials-link {
+        display: block;
+        text-decoration: none;
+        @include font-roboto(14px, $fw-l, 30px);
+        text-transform: capitalize;
+        color: $clr-text-secondary;
+      }
+
+      // ====================
+      &__socials-link {
+        display: flex;
+        width: 36px;
+        height: 36px;
+        border: 2px solid $clr-border-secondary;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+
+      &__social-img {
+        display: block;
+      }
+    }
+  }
+
+    // ===============
+  &-form {
+
+    &__input-holder {
+      margin-bottom: 15px;
+    }
+
+    &__input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 2px 10px;
+      border: 1px solid $clr-border-secondary;
+      background-color: transparent;
+      @include font-roboto(14px, $fw-l, 36px);
+      color: $clr-text-light;
+
+      &::placeholder {
+        @include font-roboto(14px, $fw-l, 36px);
+        color: $clr-text-secondary;
+      }
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
+
+    // ==============================
+    .button {
+      display: block;
+      box-sizing: border-box;
+      @include button-size(100px, 40px);
+      padding: 2px 0;
+      @include font-roboto(16px, $fw-l, 36px);
+      text-transform: capitalize;
+      background-color: $clr-bg-button;
+      color: $clr-text-light;
+    }
+  }
+
+  // ==============================
+  &-lower-part{
+    background-color: $clr-bg-footer-secondary;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 18px 15px;
+    @include font-roboto(14px, $fw-r, 36px);
+    color: $clr-text-secondary;
+    text-align: center;
+
+    &__copyright {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
